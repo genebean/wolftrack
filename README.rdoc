@@ -1,3 +1,11 @@
+{<img src="https://travis-ci.org/genebean/wolftrack.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/genebean/wolftrack] ( master branch )
+
+{<img src="https://travis-ci.org/genebean/wolftrack.svg?branch=development" alt="Build Status" />}[https://travis-ci.org/genebean/wolftrack] ( development branch )
+
+{<img src="https://codeclimate.com/github/genebean/wolftrack.png" />}[https://codeclimate.com/github/genebean/wolftrack]
+
+{<img src="https://codeclimate.com/github/genebean/wolftrack/coverage.png" />}[https://codeclimate.com/github/genebean/wolftrack]
+
 == README
 
 This README would normally document whatever steps are necessary to get the
