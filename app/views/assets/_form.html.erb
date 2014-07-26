@@ -1,0 +1,89 @@
+<%= form_for(@asset) do |f| %>
+  <% if @asset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@asset.errors.count, "error") %> prohibited this asset from being saved:</h2>
+
+      <ul>
+      <% @asset.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :serial_number %><br>
+    <%= f.text_field :serial_number %>
+  </div>
+  <div class="field">
+    <%= f.label :id_manufacturer %><br>
+    <%= f.number_field :id_manufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :inventory_number %><br>
+    <%= f.number_field :inventory_number %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :id_asset_type %><br>
+    <%= f.number_field :id_asset_type %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :id_photo %><br>
+    <%= f.number_field :id_photo %>
+  </div>
+  <div class="field">
+    <%= f.label :id_purchase_order %><br>
+    <%= f.number_field :id_purchase_order %>
+  </div>
+  <div class="field">
+    <%= f.label :surplused_on %><br>
+    <%= f.date_select :surplused_on %>
+  </div>
+  <div class="field">
+    <%= f.label :id_building %><br>
+    <%= f.number_field :id_building %>
+  </div>
+  <div class="field">
+    <%= f.label :room %><br>
+    <%= f.text_field :room %>
+  </div>
+  <div class="field">
+    <%= f.label :id_rack %><br>
+    <%= f.number_field :id_rack %>
+  </div>
+  <div class="field">
+    <%= f.label :in_rack_unit %><br>
+    <%= f.number_field :in_rack_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :id_contact %><br>
+    <%= f.number_field :id_contact %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty_expiration %><br>
+    <%= f.date_select :warranty_expiration %>
+  </div>
+  <div class="field">
+    <%= f.label :id_warranty_provider %><br>
+    <%= f.number_field :id_warranty_provider %>
+  </div>
+  <div class="field">
+    <%= f.label :planned_eol %><br>
+    <%= f.date_select :planned_eol %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

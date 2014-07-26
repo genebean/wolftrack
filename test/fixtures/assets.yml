@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial_number: MyString
+  id_manufacturer: 1
+  inventory_number: 1
+  model: MyString
+  id_asset_type: 1
+  description: MyText
+  notes: MyText
+  id_photo: 1
+  id_purchase_order: 1
+  surplused_on: 2014-07-26
+  id_building: 1
+  room: MyString
+  id_rack: 1
+  in_rack_unit: 1
+  id_contact: 1
+  warranty_expiration: 2014-07-26
+  id_warranty_provider: 1
+  planned_eol: 2014-07-26
+
+two:
+  serial_number: MyString
+  id_manufacturer: 1
+  inventory_number: 1
+  model: MyString
+  id_asset_type: 1
+  description: MyText
+  notes: MyText
+  id_photo: 1
+  id_purchase_order: 1
+  surplused_on: 2014-07-26
+  id_building: 1
+  room: MyString
+  id_rack: 1
+  in_rack_unit: 1
+  id_contact: 1
+  warranty_expiration: 2014-07-26
+  id_warranty_provider: 1
+  planned_eol: 2014-07-26

@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Serial number:</strong>
+  <%= @asset.serial_number %>
+</p>
+
+<p>
+  <strong>Id manufacturer:</strong>
+  <%= @asset.id_manufacturer %>
+</p>
+
+<p>
+  <strong>Inventory number:</strong>
+  <%= @asset.inventory_number %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @asset.model %>
+</p>
+
+<p>
+  <strong>Id asset type:</strong>
+  <%= @asset.id_asset_type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @asset.description %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @asset.notes %>
+</p>
+
+<p>
+  <strong>Id photo:</strong>
+  <%= @asset.id_photo %>
+</p>
+
+<p>
+  <strong>Id purchase order:</strong>
+  <%= @asset.id_purchase_order %>
+</p>
+
+<p>
+  <strong>Surplused on:</strong>
+  <%= @asset.surplused_on %>
+</p>
+
+<p>
+  <strong>Id building:</strong>
+  <%= @asset.id_building %>
+</p>
+
+<p>
+  <strong>Room:</strong>
+  <%= @asset.room %>
+</p>
+
+<p>
+  <strong>Id rack:</strong>
+  <%= @asset.id_rack %>
+</p>
+
+<p>
+  <strong>In rack unit:</strong>
+  <%= @asset.in_rack_unit %>
+</p>
+
+<p>
+  <strong>Id contact:</strong>
+  <%= @asset.id_contact %>
+</p>
+
+<p>
+  <strong>Warranty expiration:</strong>
+  <%= @asset.warranty_expiration %>
+</p>
+
+<p>
+  <strong>Id warranty provider:</strong>
+  <%= @asset.id_warranty_provider %>
+</p>
+
+<p>
+  <strong>Planned eol:</strong>
+  <%= @asset.planned_eol %>
+</p>
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>
