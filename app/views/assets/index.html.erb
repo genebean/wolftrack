@@ -4,22 +4,21 @@
   <thead>
     <tr>
       <th>Serial number</th>
-      <th>Id manufacturer</th>
+      <th>Manufacturer</th>
       <th>Inventory number</th>
       <th>Model</th>
-      <th>Id asset type</th>
+      <th>Asset type</th>
       <th>Description</th>
       <th>Notes</th>
-      <th>Id photo</th>
-      <th>Id purchase order</th>
+      <th>Purchase order</th>
       <th>Surplused on</th>
-      <th>Id building</th>
+      <th>Building</th>
       <th>Room</th>
-      <th>Id rack</th>
+      <th>Rack</th>
       <th>In rack unit</th>
-      <th>Id contact</th>
+      <th>Primary contact</th>
       <th>Warranty expiration</th>
-      <th>Id warranty provider</th>
+      <th>Warranty provider</th>
       <th>Planned eol</th>
       <th colspan="3"></th>
     </tr>
@@ -29,22 +28,21 @@
     <% @assets.each do |asset| %>
       <tr>
         <td><%= asset.serial_number %></td>
-        <td><%= asset.id_manufacturer %></td>
+        <td><%= asset.manufacturer_id %></td>
         <td><%= asset.inventory_number %></td>
         <td><%= asset.model %></td>
-        <td><%= asset.id_asset_type %></td>
+        <td><%= asset.asset_type_id %></td>
         <td><%= asset.description %></td>
         <td><%= asset.notes %></td>
-        <td><%= asset.id_photo %></td>
-        <td><%= asset.id_purchase_order %></td>
+        <td><%= asset.purchase_order_id %></td>
         <td><%= asset.surplused_on %></td>
-        <td><%= asset.id_building %></td>
+        <td><%= asset.building_id %></td>
         <td><%= asset.room %></td>
-        <td><%= asset.id_rack %></td>
+        <td><%= asset.rack_id %></td>
         <td><%= asset.in_rack_unit %></td>
-        <td><%= asset.id_contact %></td>
+        <td><%= asset.primary_contact_id %></td>
         <td><%= asset.warranty_expiration %></td>
-        <td><%= asset.id_warranty_provider %></td>
+        <td><%= asset.warranty_provider_id %></td>
         <td><%= asset.planned_eol %></td>
         <td><%= link_to 'Show', asset %></td>
         <td><%= link_to 'Edit', edit_asset_path(asset) %></td>

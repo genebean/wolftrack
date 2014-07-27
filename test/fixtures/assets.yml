@@ -2,40 +2,38 @@
 
 one:
   serial_number: MyString
-  id_manufacturer: 1
+  manufacturer_id: 1
   inventory_number: 1
   model: MyString
-  id_asset_type: 1
+  asset_type_id: 1
   description: MyText
   notes: MyText
-  id_photo: 1
-  id_purchase_order: 1
+  purchase_order_id: 1
   surplused_on: 2014-07-26
-  id_building: 1
+  building_id: 1
   room: MyString
-  id_rack: 1
+  rack_id: 1
   in_rack_unit: 1
-  id_contact: 1
+  primary_contact_id: 1
   warranty_expiration: 2014-07-26
-  id_warranty_provider: 1
+  warranty_provider_id: 1
   planned_eol: 2014-07-26
 
 two:
   serial_number: MyString
-  id_manufacturer: 1
+  manufacturer_id: 1
   inventory_number: 1
   model: MyString
-  id_asset_type: 1
+  asset_type_id: 1
   description: MyText
   notes: MyText
-  id_photo: 1
-  id_purchase_order: 1
+  purchase_order_id: 1
   surplused_on: 2014-07-26
-  id_building: 1
+  building_id: 1
   room: MyString
-  id_rack: 1
+  rack_id: 1
   in_rack_unit: 1
-  id_contact: 1
+  primary_contact_id: 1
   warranty_expiration: 2014-07-26
-  id_warranty_provider: 1
+  warranty_provider_id: 1
   planned_eol: 2014-07-26

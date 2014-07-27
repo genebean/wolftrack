@@ -2,22 +2,21 @@ class CreateAssets < ActiveRecord::Migration
   def change
     create_table :assets do |t|
       t.string :serial_number
-      t.integer :id_manufacturer
+      t.integer :manufacturer_id
       t.integer :inventory_number
       t.string :model
-      t.integer :id_asset_type
+      t.integer :asset_type_id
       t.text :description
       t.text :notes
-      t.integer :id_photo
-      t.integer :id_purchase_order
+      t.integer :purchase_order_id
       t.date :surplused_on
-      t.integer :id_building
+      t.integer :building_id
       t.string :room
-      t.integer :id_rack
+      t.integer :rack_id
       t.integer :in_rack_unit
-      t.integer :id_contact
+      t.integer :primary_contact_id
       t.date :warranty_expiration
-      t.integer :id_warranty_provider
+      t.integer :warranty_provider_id
       t.date :planned_eol
 
       t.timestamps

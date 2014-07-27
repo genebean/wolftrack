@@ -11,26 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140727013114) do
+ActiveRecord::Schema.define(version: 20140727023246) do
 
   create_table "assets", force: true do |t|
     t.string   "serial_number"
-    t.integer  "manufacturer"
+    t.integer  "manufacturer_id"
     t.integer  "inventory_number"
     t.string   "model"
-    t.integer  "asset_type"
+    t.integer  "asset_type_id"
     t.text     "description"
     t.text     "notes"
-    t.integer  "photo"
-    t.integer  "purchase_order"
+    t.integer  "purchase_order_id"
     t.date     "surplused_on"
-    t.integer  "building"
+    t.integer  "building_id"
     t.string   "room"
-    t.integer  "rack"
+    t.integer  "rack_id"
     t.integer  "in_rack_unit"
-    t.integer  "contact"
+    t.integer  "primary_contact_id"
     t.date     "warranty_expiration"
-    t.integer  "warranty_provider"
+    t.integer  "warranty_provider_id"
     t.date     "planned_eol"
     t.datetime "created_at"
     t.datetime "updated_at"

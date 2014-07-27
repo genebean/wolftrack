@@ -18,7 +18,7 @@ class AssetsControllerTest < ActionController::TestCase
 
   test "should create asset" do
     assert_difference('Asset.count') do
-      post :create, asset: { description: @asset.description, id_asset_type: @asset.id_asset_type, id_building: @asset.id_building, id_contact: @asset.id_contact, id_manufacturer: @asset.id_manufacturer, id_photo: @asset.id_photo, id_purchase_order: @asset.id_purchase_order, id_rack: @asset.id_rack, id_warranty_provider: @asset.id_warranty_provider, in_rack_unit: @asset.in_rack_unit, inventory_number: @asset.inventory_number, model: @asset.model, notes: @asset.notes, planned_eol: @asset.planned_eol, room: @asset.room, serial_number: @asset.serial_number, surplused_on: @asset.surplused_on, warranty_expiration: @asset.warranty_expiration }
+      post :create, asset: { asset_type_id: @asset.asset_type_id, building_id: @asset.building_id, description: @asset.description, in_rack_unit: @asset.in_rack_unit, inventory_number: @asset.inventory_number, manufacturer_id: @asset.manufacturer_id, model: @asset.model, notes: @asset.notes, planned_eol: @asset.planned_eol, primary_contact_id: @asset.primary_contact_id, purchase_order_id: @asset.purchase_order_id, rack_id: @asset.rack_id, room: @asset.room, serial_number: @asset.serial_number, surplused_on: @asset.surplused_on, warranty_expiration: @asset.warranty_expiration, warranty_provider_id: @asset.warranty_provider_id }
     end
 
     assert_redirected_to asset_path(assigns(:asset))
@@ -35,7 +35,7 @@ class AssetsControllerTest < ActionController::TestCase
   end
 
   test "should update asset" do
-    patch :update, id: @asset, asset: { description: @asset.description, id_asset_type: @asset.id_asset_type, id_building: @asset.id_building, id_contact: @asset.id_contact, id_manufacturer: @asset.id_manufacturer, id_photo: @asset.id_photo, id_purchase_order: @asset.id_purchase_order, id_rack: @asset.id_rack, id_warranty_provider: @asset.id_warranty_provider, in_rack_unit: @asset.in_rack_unit, inventory_number: @asset.inventory_number, model: @asset.model, notes: @asset.notes, planned_eol: @asset.planned_eol, room: @asset.room, serial_number: @asset.serial_number, surplused_on: @asset.surplused_on, warranty_expiration: @asset.warranty_expiration }
+    patch :update, id: @asset, asset: { asset_type_id: @asset.asset_type_id, building_id: @asset.building_id, description: @asset.description, in_rack_unit: @asset.in_rack_unit, inventory_number: @asset.inventory_number, manufacturer_id: @asset.manufacturer_id, model: @asset.model, notes: @asset.notes, planned_eol: @asset.planned_eol, primary_contact_id: @asset.primary_contact_id, purchase_order_id: @asset.purchase_order_id, rack_id: @asset.rack_id, room: @asset.room, serial_number: @asset.serial_number, surplused_on: @asset.surplused_on, warranty_expiration: @asset.warranty_expiration, warranty_provider_id: @asset.warranty_provider_id }
     assert_redirected_to asset_path(assigns(:asset))
   end
 
