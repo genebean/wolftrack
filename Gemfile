@@ -10,6 +10,12 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
+# Styles via Bootstrap
+gem 'bootstrap-sass', '~> 3.2.0'
+
+# Add browser vendor prefixes automatically with Bootstrap
+gem 'autoprefixer-rails'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
