@@ -54,3 +54,7 @@ gem 'spring',        group: :development
 
 # Code Climate
 gem "codeclimate-test-reporter", group: :test, require: nil
+
+# Active Admin 
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'devise'
